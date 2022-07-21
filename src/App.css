@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+  width: 100%;
+  background-color: #0c161b;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+button {
+  padding: 12px;
+  background-color: #131869;
+  color: #5090ea;
+  font-size: 15px;
+  border-radius: 20px;
+  font-weight: 900;
+  border: 1px solid black;
+}
+button:hover {
+  border: 1px solid blue;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #0c0c0c;
+  border-radius: 20px;
+}
+
+.transfer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #0c0c0c;
+  border-radius: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 1em;
+  background-color: #2b2b2b;
+  color: white;
+  border: 0;
+  font-size: 20px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid transparent;
+}
+input:hover {
+  border: 1px solid white;
+}
+
+h1 {
+  font-size: 40px;
+  color: #8888ff;
+  text-shadow: 0px 0 3px #4800ff, 0 0 5px #0000ff;
+}
+.balance-connect {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 40%;
+  min-width: 598.4px;
+  /* background-color: #0c0c0c; */
+  border-radius: 20px;
+}
+
+@media (max-width: 1211px) {
+  .main {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 1211px) {
+  .main {
+    padding: 20px 100px;
+  }
+}
+@media (max-width: 952px) {
+  .main {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 818px) {
+  .main {
+    flex-direction: column;
+  }
+  .transfer {
+    margin-top: 4em;
+  }
+}
+@media (max-width: 928px) {
+  .head {
+    flex-direction: column;
+  }
+}
+@media (max-width: 661px) {
+  .balance-connect {
+    flex-direction: column;
+    min-width: 0;
+    width: 50%;
+    min-width: 330px;
+  }
+}
